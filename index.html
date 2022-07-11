@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/nbar.css">
     <link rel="stylesheet" type="text/css" href="css/[index.html] body.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <title>Home - Appie & Dino</title>
 
-    <div class="topnav">
-        <a style="font-weight:bold" class="current" href="#" style="margin-left: 0px;" title="Homepage">Home</a>
-        <a style="font-weight:bold" href="afbeeldingen/Appie/appie.html" title="Foto's van Appie">Appie</a>
-        <a style="font-weight:bold" href="afbeeldingen/Dino/dino.html" title="Foto's van Dino">Dino</a>
-        <a style="font-weight:bold" href="afbeeldingen/Appie_&_Dino/appie_&_dino.html" title="Foto's van Appie & Dino">Appie & Dino</a>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="afbeeldingen/Appie/appie.html">Appie</a>
+        <a href="afbeeldingen/Dino/dino.html">Dino</a>
+        <a href="afbeeldingen/Appie_&_Dino/appie_&_dino.html">Appie & Dino</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
 </head>
 <body>
     <p class="ad">Appie <br>en <br>Dino...</p>
