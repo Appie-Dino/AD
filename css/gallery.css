@@ -28,6 +28,11 @@
 .container .heading h3 span{
   font-weight: 100;
 }
+@media only screen and (max-width: 644px){
+  .container .heading{
+    font-size: 4em;
+  }
+}
 .container .box{
  display: flex;
  flex-direction: row;
@@ -50,11 +55,6 @@
 .container .box .dream{
   width: 100%;
 }
-}
-@media screen and (max-width: 1081px) {
-  .container .heading h3 {
-    font-size: 150px;
-  }
 }
 @media only screen and (max-width: 643px){
 .container .heading{
